@@ -18,10 +18,10 @@ export const Navbar = () => {
     }
 
     return(
-        <header className="fixed py-5 top-0 left-0 right-0 ">
+        <header className="fixed py-5 top-0 left-0 right-0 z-50">
             <nav className="flex items-center justify-between px-6 mx-auto container">
                 <a href="" className="text-xl font-bold tracking-tight">
-                    pm<span className="text-primary">.</span>
+                    MJ<span className="text-primary">.</span>
                 </a>
                 {/* Desktop */}
                 <div className="hidden md:flex items-center gap-1 ">
