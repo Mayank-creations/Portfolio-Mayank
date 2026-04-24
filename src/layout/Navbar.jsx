@@ -4,9 +4,10 @@ import { useState } from "react";
 
 const navLinks = [
   {href: "#about", label: "About"},
-  {href: "#projects", label: "Projects"},
+  {href: "#skills", label: "Skills"},
   {href: "#experience", label: "Experience"},
-  {href: "#testimonials", label: "Testimonials"},
+  {href: "#projects", label: "Projects"},
+
 ];
 
 export const Navbar = () => {
@@ -32,7 +33,9 @@ export const Navbar = () => {
                     </div>
                 </div>
                 <div className="hidden md:block">
-                    <Button classname="Contact Me" />
+                    <Button>
+                        Contact Me
+                    </Button>
                 </div>
                 {/* Mobile Menu Button */}
                 <button className="md:hidden "  onClick={MenuClick}>

@@ -1,4 +1,4 @@
-export const Button = ({classname ="" , children, size ="md"}) => {
+export const Button = ({className ="" , children, size ="md"}) => {
 
     const baseClasses = "rounded-full font-medium bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 ";
 
@@ -8,13 +8,13 @@ export const Button = ({classname ="" , children, size ="md"}) => {
         lg: "px-6 py-3 text-lg",
     }
 
-    const classes = `${baseClasses} ${sizeClasses[size]} ${classname}`;
+    const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
 
 
     return(
         <button className={classes}>
             <span className="flex items-center justify-center gap-2">
-                {classname}
+                {children}
             </span>
         </button>
     );
