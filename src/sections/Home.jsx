@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '../components/Button'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Download, Github, Linkedin} from 'lucide-react'
+import AnimatedButton from '../components/AnimatedButton'
 
 const Home = () => {
   return (
@@ -40,7 +41,7 @@ const Home = () => {
           </div>
           {/* Headline */}
           <div className='space-y-4'>
-            <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100 '>
+            <h1 className='text-3xl md:text-5xl lg:text-5xl font-bold leading-tight animate-fade-in animation-delay-100'>
               Hi, I'm <span className='font-serif italic font-semibold text-white'>Mayank Jain</span>
               <br />
               I build <span className='text-primary glow-text'>Beautiful</span>, Fast &
@@ -54,15 +55,31 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Cta */}
-          <div>
-            <Button size='lg'>
-              Contact Me <ArrowRight className='w-5 h-5'/>
-            </Button>
-              
-          
+          {/* CV Download */}
+          <div className='flex flex-wrap animate-fade-in animation-delay-300'>
+
+            <AnimatedButton >
+              <Download className='w-5 h-5' /> Download CV
+            </AnimatedButton>
+
           </div>
-        </div>
+          {/* social links */}
+          <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+              <span className="text-sm text-muted-foreground">Follow me: </span>
+              {[
+                { icon: Github, href: "https://github.com/Mayank-creations" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/mayank-jain-7844162a0/" },
+              ].map((social, idx) => (
+                <a
+                  key={idx}
+                  href={social.href}
+                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                >
+                  {<social.icon className="w-5 h-5" />}
+                </a>
+              ))}
+            </div>
+          </div>
         {/* right */}
         <div>
 
