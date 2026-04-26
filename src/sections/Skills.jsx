@@ -25,7 +25,7 @@ const Skills = () => {
         < div className = 'mt-10 animate-fade-in animation-delay-600' >
             <div >
                 <h1 className='text-sm text-muted-foreground text-center mb-6'>
-                    Technology I Work With</h1>
+                    Technologies I work with</h1>
                 <div className=' relative overflow-hidden'>
                     <div className='flex animate-marquee '>
                         {[...skills, ...skills].map((skill, idx) => (
