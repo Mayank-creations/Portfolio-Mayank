@@ -8,7 +8,7 @@ const projects = [
     title: "InvestIQ",
     description:
       "A smart investment calculator that helps users plan their financial future with compound interest calculations, yearly breakdowns, and total return insights.",
-    image: "/projects/P1.png",
+    image: "/projects/P2.png",
     tags: ["React", "TypeScript", "Tailwind CSS"],
     link: "#",
     github: "#",
@@ -17,7 +17,7 @@ const projects = [
     title: "Tasky",
     description:
       "A clean and minimal task management app with the ability to add, complete, and delete tasks — built to keep you focused and organized.",
-    image: "/projects/P2.png",
+    image: "/projects/P1.png",
     tags: ["React", "Tailwind CSS"],
     link: "#",
     github: "#",
@@ -26,7 +26,7 @@ const projects = [
     title: "QuickBite",
     description:
       "A modern food ordering experience with browsable menus, add to cart, and seamless checkout — designed with a warm, appetizing UI.",
-    image: "/projects/P3.png",
+    image: "/projects/P4.png",
     tags: ["React", "JavaScript", "Tailwind CSS"],
     link: "#",
     github: "#",
@@ -35,7 +35,7 @@ const projects = [
     title: "CartX",
     description:
       "A full-featured ecommerce storefront with product listings, shopping cart, and checkout flow — built for a smooth and fast shopping experience.",
-    image: "/projects/P4.png",
+    image: "/projects/P3.png",
     tags: ["React", "Next.js", "Tailwind CSS"],
     link: "#",
     github: "#",
